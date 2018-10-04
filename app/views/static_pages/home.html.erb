@@ -1,0 +1,11 @@
+<% provide :title, t("home")  %>
+<div class="center jumbotron">
+  <h1><%= t "home_page.Welcome_to_the_Sample_App" %></h1>
+  <h2>
+    <%= t "home_page.this_is_the_home_page_for_the" %>
+    <%= link_to t("ror_tutorial"), Settings.rails_tutorial %>
+    <%= t "home_page.sample_application" %>
+  </h2>
+  <%= link_to t("signup_now"), signup_path, class: "btn btn-lg btn-primary" %>
+</div>
+<%= link_to image_tag("rails.png", alt: "Rails logo"), Settings.rails_homepage %>
