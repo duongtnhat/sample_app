@@ -1,11 +1,11 @@
 <% provide :title, t("about") %>
 <h1><%= t "about" %></h1>
 <p>
-  <%= t "about_page.The" %> <%= link_to t("ror_tutorial"), Settings.rails_tutorial_homepage %>
+  <%= t "the" %> <%= link_to t("ror_tutorial"), Settings.rails_tutorial_homepage %>
   <%= t "about_page.is_a" %>
-  <%= link_to "book", Settings.rails_tutorial_book %> and
-  <%= link_to "screencast series", Settings.screencast_series %>
+  <%= link_to t("about_page.book"), Settings.rails_tutorial_book %> and
+  <%= link_to t("about_page.screencast_series"), Settings.screencast_series %>
   <%= t "about_page.to_teach_web_development_with" %>
-  <%= link_to "Ruby on Rails", Settings.rails_tutorial %>.
-  <%= t "about_page.This_is_the_sample_application_for_the_tutorial" %>
+  <%= link_to t("about_page.ruby_on_rails"), Settings.rails_tutorial %>.
+  <%= t "about_page.this_is_the_sample_application_for_the_tutorial" %>
 </p>
