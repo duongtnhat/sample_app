@@ -10,6 +10,8 @@ en:
   michael_hartl: "Michael Hartl"
   base_title: "Ruby on Rails Tutorial Sample App"
   signup_now: "Sign up now!"
+  sign_up: "Sign up"
+  error: "error"
   the: "the"
   The: "The"
   by: "by"
@@ -28,3 +30,9 @@ en:
   help_page:
     Get_help_on_the_Ruby_on_Rails_Tutorial_at_the: "Get help on the Ruby on Rails Tutorial at the"
     To_get_help_on_this_sample_app_see_the: "To get help on this sample app, see the"
+  signup:
+    Confirmation: "Confirmation"
+    Create_my_account: "Create my account"
+    The_form_contains: "The form contains "
+    Welcome: "Welcome to the Sample App!"
+    User_not_found: "User not found"
