@@ -23,7 +23,7 @@ en:
   home_page:
     this_is_the_home_page_for_the: "This is the home page for the"
     sample_application: "sample application."
-    welcome_to_the_Sample_App: "Welcome to the Sample App"
+    welcome_to_the_sample_app: "Welcome to the Sample App"
   about_page:
     book: "book"
     screencast_series: "screencast series"
@@ -48,3 +48,5 @@ en:
   signin:
     incorrect_signin: "Invalid email/password combination"
     new_user: "New user?"
+  session:
+    remember_me_on_this_computer: "Remember me on this computer"
