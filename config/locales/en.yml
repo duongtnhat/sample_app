@@ -61,3 +61,11 @@ en:
     confirm_delete: "Are you sure?"
     user_deleted: "User deleted"
     change: "Change"
+  mail:
+    hi: "Hi"
+    mail_content: "Welcome to the Sample App! Click on the link below to activate your account:"
+    activate: "Activate"
+    check_mail: "Please check your email to activate your account."
+    activated: "Account activated!"
+    inactivated: "Invalid activation link"
+    inactivated_warning: "Account not activated. Check your email for the activation link."

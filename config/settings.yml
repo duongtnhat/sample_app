@@ -15,3 +15,6 @@ constant:
   default_avatar_size: 80
   user_page_size: 10
   avatar_size: 50
+mail:
+  from: "from@example.com"
+  subject: "Account activation"
