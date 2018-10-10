@@ -50,6 +50,7 @@ en:
     new_user: "New user?"
   session:
     remember_me_on_this_computer: "Remember me on this computer"
+    forgot_password: "(forgot password)"
   user:
     edit_user: "Edit user"
     save_change: "Save changes"
@@ -69,3 +70,33 @@ en:
     activated: "Account activated!"
     inactivated: "Invalid activation link"
     inactivated_warning: "Account not activated. Check your email for the activation link."
+    reset_subject: "Password reset"
+    active_subject: "Account activation"
+    reset_mail_content: "To reset your password click the link below:
+                          %s
+                          This link will expire in two hours.
+                          If you did not request your password to be reset,
+                          please ignore this email and
+                          your password will stay as it is."
+    reset_mail_content_erb: "<h1>Password reset</h1>
+
+                             <p>To reset your password click the link below:</p>
+
+                             %s
+                             <p>This link will expire in two hours.</p>
+
+                             <p>
+                               If you did not request your password to be reset,
+                               please ignore this email and
+                               your password will stay as it is.
+                             </p>"
+  password:
+    forgot_password: "Forgot password"
+    submit: "Submit"
+    email_sent: "Email sent with password reset instructions"
+    not_found: "Email address not found"
+    reset_password: "Reset password"
+    update_password: "Update password"
+    expired_password: "Password reset has expired."
+    password_empty: "can't be empty"
+    password_reseted: "Password has been reset."
