@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  scope :show_user, -> {select :id, :name, :email}
   attr_accessor :remember_token
   before_save {email.downcase!}
   validates :name,  presence: true,

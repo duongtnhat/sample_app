@@ -7,8 +7,11 @@ screencast_series: "http://screencasts.railstutorial.org/"
 rails_homepage: "http://rubyonrails.org/"
 author: "http://www.michaelhartl.com/"
 gravatar: "https://secure.gravatar.com/avatar/%{id}?size=%{size}"
+gravater_link: "http://gravatar.com/emails"
 constant:
   email_max_length: 255
   username_max_length: 50
   password_min_length: 6
   default_avatar_size: 80
+  user_page_size: 10
+  avatar_size: 50

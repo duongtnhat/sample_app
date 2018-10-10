@@ -15,6 +15,8 @@ gem "bootstrap-sass"
 gem "config"
 gem "bcrypt"
 gem "jquery-rails"
+gem "ffaker"
+gem "kaminari"
 
 gem "bootsnap", ">= 1.1.0", require: false
 
