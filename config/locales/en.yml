@@ -50,3 +50,14 @@ en:
     new_user: "New user?"
   session:
     remember_me_on_this_computer: "Remember me on this computer"
+  user:
+    edit_user: "Edit user"
+    save_change: "Save changes"
+    update_your_profile: "Update your profile"
+    profile_updated: "Profile updated"
+    please_log_in: "Please log in."
+    all_user: "All users"
+    delete: "Delete"
+    confirm_delete: "Are you sure?"
+    user_deleted: "User deleted"
+    change: "Change"
