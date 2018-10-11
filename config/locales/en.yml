@@ -20,6 +20,8 @@ en:
   settings: "Settings"
   sign_out: "Sign out"
   account: "Account"
+  view_my_profile: "view my profile"
+  micropost: "micropost"
   home_page:
     this_is_the_home_page_for_the: "This is the home page for the"
     sample_application: "sample application."
@@ -100,3 +102,14 @@ en:
     expired_password: "Password reset has expired."
     password_empty: "can't be empty"
     password_reseted: "Password has been reset."
+  post:
+    post_ago: "Posted %s ago."
+    post_created: "Micropost created!"
+    compose: "Compose new micropost..."
+    post: "Post"
+    post_deleted: "Post deleted"
+    not_deleted: "Can not delete post"
+    number_post: "Microposts (%s)"
+    micropost_feed: "Micropost Feed"
+  upload:
+    img_max_size: "should be less than 5MB"

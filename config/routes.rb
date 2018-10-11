@@ -11,4 +11,5 @@ Rails.application.routes.draw do
   resources :users
   resources :account_activations, only: %i(edit)
   resources :password_resets, except: %i(destroy show index)
+  resources :microposts, only: %i(create destroy)
 end

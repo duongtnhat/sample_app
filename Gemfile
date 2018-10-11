@@ -17,6 +17,10 @@ gem "bcrypt"
 gem "jquery-rails"
 gem "ffaker"
 gem "kaminari"
+gem "carrierwave"
+gem "fog"
+gem "mini_magick"
+gem "i18n-js"
 
 gem "bootsnap", ">= 1.1.0", require: false
 
