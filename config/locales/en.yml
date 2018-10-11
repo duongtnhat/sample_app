@@ -100,3 +100,5 @@ en:
     expired_password: "Password reset has expired."
     password_empty: "can't be empty"
     password_reseted: "Password has been reset."
+  post:
+    post_ago: "Posted %s ago."
