@@ -63,6 +63,10 @@ class User < ApplicationRecord
     self.reset_sent_at < Settings.constant.password_reset_expired.hours.ago
   end
 
+  def feed
+    microposts
+  end
+
   private
 
   def create_activation_digest

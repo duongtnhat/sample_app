@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   post "/signin", to: "sessions#create"
   delete "/signout", to: "sessions#destroy"
   resources :users
-  resources :account_activations, only: [:edit]
-  resources :password_resets, except: [:destroy, :show, :index]
+  resources :account_activations, only: %i(edit)
+  resources :password_resets, except: %i(destroy show index)
+  resources :microposts, only: %i(create destroy)
 end

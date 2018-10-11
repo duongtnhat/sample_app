@@ -41,10 +41,8 @@ class PasswordResetsController < ApplicationController
 
   def check_valid
     @user = User.find_by email: params[:email]
-    # valid_user
     redirect_to root_url unless
         @user && @user.activated && @user.authenticated?(:reset, params[:id])
-    # check_expiration
     return unless @user.password_reset_expired?
     flash[:danger] = t "password.expired_password"
     redirect_to new_password_reset_url
