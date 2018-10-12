@@ -18,6 +18,11 @@ class UsersController < ApplicationController
     @microposts = @user.microposts
       .page(params[:page])
       .per Settings.constant.user_page_size
+    if current_user.following? @user
+      @relationships = current_user.active_relationships.find_by followed_id: @user.id
+    else
+      @relationships = current_user.active_relationships.build
+    end
   end
 
   def create
@@ -49,6 +54,20 @@ class UsersController < ApplicationController
       flash[:danger] = t "signup.user_not_found"
     end
     redirect_to users_url
+  end
+
+  def following
+    @title = t "follow.following"
+    @users = @user.following.page(params[:page])
+      .per Settings.constant.user_page_size
+    render "show_follow"
+  end
+
+  def followers
+    @title = t "follow.followers"
+    @users = @user.followers.page(params[:page])
+      .per Settings.constant.user_page_size
+    render "show_follow"
   end
 
   private
