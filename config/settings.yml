@@ -15,6 +15,7 @@ constant:
   default_avatar_size: 80
   user_page_size: 10
   avatar_size: 50
+  avatar_mini_size: 30
   password_reset_expired: 2
   content_max_length: 140
   image_size: [400, 400]

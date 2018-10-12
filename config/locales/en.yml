@@ -103,6 +103,7 @@ en:
     password_empty: "can't be empty"
     password_reseted: "Password has been reset."
   post:
+    micro_post: "Microposts:"
     post_ago: "Posted %s ago."
     post_created: "Micropost created!"
     compose: "Compose new micropost..."
@@ -113,3 +114,8 @@ en:
     micropost_feed: "Micropost Feed"
   upload:
     img_max_size: "should be less than 5MB"
+  follow:
+    followers: "Followers"
+    following: "Following"
+    follow: "Follow"
+    unfollow: "Unfollow"
