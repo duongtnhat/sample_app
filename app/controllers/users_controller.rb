@@ -7,14 +7,18 @@ class UsersController < ApplicationController
   def index
     @users = User.show_user
      .page(params[:page])
-     .per(Settings.constant.user_page_size)
+     .per Settings.constant.user_page_size
   end
 
   def new
     @user = User.new
   end
 
-  def show; end
+  def show
+    @microposts = @user.microposts
+      .page(params[:page])
+      .per Settings.constant.user_page_size
+  end
 
   def create
     @user = User.new user_params
@@ -52,13 +56,6 @@ class UsersController < ApplicationController
   def user_params
     params.require(:user)
       .permit :name, :email, :password, :password_confirmation
-  end
-
-  def logged_in_user
-    return if signed_in?
-    store_location
-    flash[:danger] = t "user.please_log_in"
-    redirect_to signin_path
   end
 
   def correct_user
